@@ -1,12 +1,13 @@
 
 
 def allbut(a_list, index):
-    new_list = a_list.pop(index)
+    new_list = a_list[:]
+    new_list.pop(index)
+    return new_list
+
+def slice_in_place(a_list, start, end):
+    return 0
 
 
-def choices(n,k):
-    if k == 0 or k == n:
-        return 1
-    else:
-        return choices(n-1, k) + choices(n-1, k-1)
+
 

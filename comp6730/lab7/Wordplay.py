@@ -17,6 +17,7 @@ def word_frequency_wordlist(number):
         most_frequent_list.append(most_frequent)
         wordlen_set.remove(most_frequent)
         number -= 1
+    fileobj.close()
     return print(most_frequent_list)
 
 
@@ -47,6 +48,7 @@ def find_triple_double():
         word = line.strip()  # 用于去除字符串首尾指定的字符，默认为空格
         if is_triple_double(word):
             print(word)
+    fin.close()
 
 
 # word_frequency_wordlist(10)

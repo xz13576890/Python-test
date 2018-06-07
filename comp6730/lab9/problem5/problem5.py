@@ -10,5 +10,10 @@
 ## returns the correct answer to the problem. (The statement "return 0"
 ## is just a placeholder: you should replace it.)
 
-def approximate_integral(lower, upper, nterms):
-    return 0
+
+def digit_sum(number):
+    numstr = str(number)
+    sum_digit = 0
+    for char in numstr:
+        sum_digit += int(char)
+    return sum_digit
